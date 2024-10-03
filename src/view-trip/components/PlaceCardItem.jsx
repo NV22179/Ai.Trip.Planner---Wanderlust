@@ -26,7 +26,7 @@ function PlaceCardItem({ place }) {
             <Link to={'https://www.google.com/maps/search/?api=1&query=' + place?.placeName + "," + place?.geoCoordinates} target='_blank'>
                 <div className='my-4 bg-gray-50 p-2 gap-2 border rounded-lg flex flex-cols-2 hover:scale-105 transition-all hover:shadow-md cursor-pointer '>
                     <div className='py-2 mx-3'>
-                        <img src={photoUrl ? photoUrl : '/public/road-trip-vacation.jpg'} className='w-[140px] h-[140px] rounded-xl object-cover' />
+                        <img src={photoUrl ? photoUrl : '/public/road-trip-vacation.png'} className='w-[140px] h-[140px] rounded-xl object-cover' />
                     </div>
                     <div>
                         <h2 className='font-medium text-sm text-orange-600'>{place.time}</h2>

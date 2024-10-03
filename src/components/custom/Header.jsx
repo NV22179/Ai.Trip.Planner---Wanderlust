@@ -50,15 +50,23 @@ function Header() {
       <div >
        {user? 
        <div className='flex items-center gap-4'>
-        <a href="/create-trip">
-         <Button variant="outline" className= "rounded-full">Create Trip</Button> 
-        </a>
-        <a href="/my-trips">
-        <Button variant="outline" className= "rounded-full">My Trips </Button> 
-        </a>
+        <a href="/">
+          <Button variant="outline" className="rounded-full border border-gray-300 text-gray-700 hover:bg-blue-500 hover:text-white transition duration-300">Home</Button>
+      </a>
+      <a href="/create-trip">
+          <Button variant="outline" className="rounded-full border border-gray-300 text-gray-700 hover:bg-blue-500 hover:text-white transition duration-300">Create Trip</Button>
+      </a>
+      <a href="/my-trips">
+          <Button variant="outline" className="rounded-full border border-gray-300 text-gray-700 hover:bg-blue-500 hover:text-white transition duration-300">My Trips</Button>
+      </a>
+
          <Popover>
           <PopoverTrigger>
-            <img src={user?.picture} className='rounded-full w-[38px] h-[38px]' />
+          <img 
+    src={user?.picture} 
+    className='rounded-full w-[38px] h-[38px] transition-transform duration-300 hover:scale-110 hover:shadow-lg' 
+/>
+
           </PopoverTrigger>
           <PopoverContent>
             <h2 className="cursor-pointer" onClick={()=>{
