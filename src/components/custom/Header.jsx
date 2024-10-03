@@ -46,7 +46,7 @@ function Header() {
 
   return (
     <div className='p-3 shadow-sm flex justify-between items-center px-4'>
-      <img src='/logo.svg'/>
+      <img src="/src/assets/NVTC2.png"/>
       <div >
        {user? 
        <div className='flex items-center gap-4'>
@@ -79,7 +79,7 @@ function Header() {
         <DialogContent>
           <DialogHeader>
             <DialogDescription>
-              <img src="/logo.svg"/>
+            <img src="/src/assets/NVTC.png"/>
               <h2 className="font-bold text-lg mt-6">Sign In with Google</h2>
               <p>Sign In to the App with Google authentication securely</p>
               <Button 
