@@ -43,7 +43,11 @@ function Header() {
 
   return (
     <div className='p-3 shadow-sm flex justify-between items-center px-4'>
-      <img src="/src/assets/NVTC2.png"/>
+          {/* This is a logo that takes you back to the main page */}
+    <a href="/">
+      <img src="/src/assets/NVTC2.png" className="cursor-pointer hover:opacity-80 transition-opacity duration-300"/>
+    </a>
+
       <div >
         {user ? 
           <div className='flex items-center gap-4'>
