@@ -45,7 +45,7 @@ function Header() {
     <div className='p-3 shadow-sm flex justify-between items-center px-4'>
           {/* This is a logo that takes you back to the main page */}
     <a href="/">
-      <img src="/src/assets/NVTC2.png" className="cursor-pointer hover:opacity-80 transition-opacity duration-300"/>
+      <img src="/workspaces/NVTC-12.A-AI-Trip-Planner/src/assets/NVTC2.png" className="cursor-pointer hover:opacity-80 transition-opacity duration-300"/>
     </a>
 
       <div >
