@@ -1,0 +1,81 @@
+Wanderlust 
+
+Problem definition: Wanderlust is an AI trip planner that addresses the problem of the overwhelming and time-consuming task of planning trips. Traditional planning leads to information overload or inefficiencies that fail to meet individual needs. By using AI Wanderlust can produce a tailored solution to user's budget restrictions, time constraints, and balances multiple preferences.  
+
+Feasibility Study:  
+
+Q1: What specific problem or need does this project address? Is there a demand for a solution like this in the local market (or target audience)? 
+
+ANS1: Planning for a trip comes with complexities and leads to frustrations, in modern times countless places to visit, accommodations, activities, and transportation options to choose from. This could lead to information overload for the person doing the planning and causes travelers to make decisions that do not align with their preferences.  
+
+There is a heavy demand for this in the local market, especially for busy professionals, families, and solo travelers who want a tailored experience suited to their preferences and hassle-free travel planning. The demand is growing by the increase of reliance on technology to simplify tasks and offer a solution for time constraints, decision fatigue and the desire for unique experiences. 
+
+Q2. What are the essential resources (materials, skills, equipment, time) required for this project?  
+
+ANS2:   
+
+Materials:  
+
+Gemini API 
+
+Places API 
+
+Google Authentication 
+
+Reliable hosting service 
+
+Software tools  
+
+IDE (Integrated development environment) 
+
+Skills: 
+
+Technical skills to develop the website 
+
+Skills to use API 
+
+Business skills 
+
+Design skills 
+
+ 
+
+Equipment: 
+
+Development hardware 
+
+Testing devices 
+
+Time:  
+
+Planning: 5 Days 
+
+Development: 2 weeks 
+
+Testing and iteration: 3 Days 
+
+Launch: 4 Days 
+
+Q3. What are the potential benefits of this project for the end-users? 
+
+ANS3: Wanderlust can save time by automatically planning and recommending flights, accommodations, and activities tailored to users. The platform changes recommendations based on changing circumstances and user feedback. Wanderlust gathers all travel planning tasks into one place, reduces the hassle of going through multiple apps. It compares prices between websites providing the best deals, and AI suggests cost-effective options to users. 
+
+ 
+
+Problem research: Researching the core problem of travel planning and how it takes time, overwhelms travelers, and results in suboptimal itineraries. This allows us to answer key questions such as What are the biggest challenges users face when planning trips? How do current solutions fall short?  
+
+Identifying the target audience and grouping them categorically. Conducting market research gives the opportunity to study current travel planners, explore industry trends, and read user reviews of competing apps to understand user complaints.	 
+
+ 
+
+Project Scope:  
+
+The objective of Wanderlust is to create an AI trip planner that makes planning trips easy and personalized. Key features include an easy-to-use website where users can quickly input travel preferences, budget, and constraints, AI recommendations that suggest tailored itineraries with flights, accommodations, and activities, and API integrations with Gemini API for search, Places API for location recommendations, and Google Authentication for secure login. Wanderlust will also have a price comparison feature to find the best deals across different platforms, adaptive itineraries that update plans based on user feedback and changes, and an all-in-one platform that combines booking, planning, and managing trips in one place. 
+
+ 
+
+The timeline for the project includes 5 days for planning, 2 weeks for development, 3 days for testing, and 4 days for launch. Resources needed for the project include materials such as APIs, hosting, software tools, and an IDE; skills in website development, API usage, business, and design; and equipment like development hardware and testing devices. 
+
+ 
+
+The benefits of Wanderlust are that it saves time, simplifies travel planning, finds cost-effective options, and provides personalized travel experiences. 
