@@ -65,11 +65,6 @@ function CreateTrip() {
       return;
     }
 
-    // Validate totalDays
-    if (formData?.totalDays > 5) {
-      toast("Please limit your trip to 5 days max.");
-      return;
-    }
 
     toast("Form generated.");
     setLoading(true);
