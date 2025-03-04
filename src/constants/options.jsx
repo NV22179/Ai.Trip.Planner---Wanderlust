@@ -1,19 +1,19 @@
 export const SelectBudgetOptions=[
     {
         id:1,
-        title:'Cheap',
+        title:'Bronze',
         desc:"Stay conscious of costs",
         icon:'💵',
     },
     {
         id:2,
-        title:'Moderate',
+        title:'Silver',
         desc:"Keep cost on the average side",
         icon:'💰',
     },
     {
         id:3,
-        title:'Luxury',
+        title:'Gold',
         desc:"Don't worry about cost",
         icon:'💎',
     },
