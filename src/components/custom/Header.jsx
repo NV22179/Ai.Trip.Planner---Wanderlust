@@ -47,7 +47,7 @@ function Header() {
     <div className='p-3 shadow-sm flex justify-between items-center px-4'>
       {/* Logo */}
       <a href="/">
-        <img src="/src/assets/NVTC2.png" className="cursor-pointer hover:opacity-80 transition-opacity duration-300"/>
+        <img src="/src/assets/WanderlustNBG2.png" className="cursor-pointer hover:opacity-80 transition-opacity duration-300"/>
       </a>
 
       <div className="relative">
@@ -105,7 +105,7 @@ function Header() {
         <DialogContent>
           <DialogHeader>
             <DialogDescription>
-              <img src="/src/assets/NVTC.png" />
+              <img src="/src/assets/WanderlustNBG.png" />
               <h2 className="font-bold text-lg mt-6">Sign In with Google</h2>
               <p>Sign In to the App with Google authentication securely</p>
               <Button onClick={login} className="w-full mt-5 flex gap-4 items-center">

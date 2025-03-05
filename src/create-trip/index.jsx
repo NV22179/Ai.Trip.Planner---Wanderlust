@@ -145,7 +145,7 @@ function CreateTrip() {
         <div>
           <label className="text-xl my-3 font-medium">What is Your Budget?</label>
           <p>The budget is exclusively allocated for activities and dining purposes.</p>
-          <div className="grid grid-cols-3 gap-5 mt-5 mb-5">
+          <div className="grid grid-cols-1 gap-5 mt-5 mb-5">
             {SelectBudgetOptions.map((item, index) => (
               <div
                 key={index}
@@ -154,14 +154,20 @@ function CreateTrip() {
                 ${formData?.budget === item.title && 'shadow-lg border-cyan-500'}`}
               >
                 <h2 className="text-3xl">{item.icon}</h2>
-                <h2 className="font-bold text-lg">{item.title}</h2>
+                <h2   
+                  className="font-bold text-2xl"  
+                  style={{ color: item.title === 'Bronze' ? '#CD7F32' :   
+                                  item.title === 'Silver' ? '#C0C0C0' :   
+                                  item.title === 'Gold' ? '#FFD700' : 'inherit' }}>  
+                  {item.title}  
+                </h2>  
                 <h2 className="text-sm text-gray-500">{item.desc}</h2>
               </div>
             ))}
           </div>
 
           <label className="text-xl font-medium my-3"> Who do you plan on traveling with on your next adventure?</label>
-          <div className="grid grid-cols-3 gap-5 mt-5">
+          <div className="grid grid-cols-1 gap-5 mt-5">
             {SelectTravelList.map((item, index) => (
               <div
                 key={index}
@@ -170,7 +176,7 @@ function CreateTrip() {
                 ${formData?.traveler === item.people && 'shadow-lg border-cyan-500'}`}
               >
                 <h2 className="text-3xl">{item.icon}</h2>
-                <h2 className="text-lg font-bold">{item.title}</h2>
+                <h2 className="text-2xl font-bold">{item.title}</h2>
                 <h2 className="text-sm text-gray-500">{item.desc}</h2>
               </div>
             ))}
@@ -182,7 +188,7 @@ function CreateTrip() {
         <Button onClick={OnGenerateTrip} disabled={loading}>
           {loading ? (
             <AiOutlineLoading3Quarters className="h-7 w-7 animate-spin" />
-          ) : 'Generate Trip'}
+          ) : 'Generate Trip ✈️'}
         </Button>
       </div>
 
@@ -190,7 +196,7 @@ function CreateTrip() {
         <DialogContent>
           <DialogHeader>
             <DialogDescription>
-              <img src="src/assets/NVTC.png" alt="Logo" />
+              <img src="src/assets/WanderlustNBG.png" alt="Logo" />
               <h2 className="font-bold text-lg mt-6">Sign In with Google</h2>
               <p>Sign In to the App with Google authentication securely</p>
               <Button onClick={login} className="w-full mt-5 flex gap-4 items-center">
