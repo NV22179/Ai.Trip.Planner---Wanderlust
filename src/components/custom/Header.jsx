@@ -47,7 +47,7 @@ function Header() {
     <div className='p-3 shadow-sm flex justify-between items-center px-4'>
       {/* Logo */}
       <a href="/">
-        <img src="/src/assets/WanderlustNBG2.png" className="cursor-pointer hover:opacity-80 transition-opacity duration-300"/>
+        <img src="src/assets/WanderlustNBG2.png" className="cursor-pointer hover:opacity-80 transition-opacity duration-300"/>
       </a>
 
       <div className="relative">
@@ -67,15 +67,21 @@ function Header() {
         >
           {user ?
             <div className='flex items-center gap-4'>
-              <a href="/">
-                <Button variant="outline" className="rounded-full border border-gray-300 text-gray-700 hover:bg-blue-500 hover:text-white transition duration-300">Home</Button>
-              </a>
-              <a href="/create-trip">
-                <Button variant="outline" className="rounded-full border border-gray-300 text-gray-700 hover:bg-blue-500 hover:text-white transition duration-300">Create Trip</Button>
-              </a>
-              <a href="/my-trips">
-                <Button variant="outline" className="rounded-full border border-gray-300 text-gray-700 hover:bg-blue-500 hover:text-white transition duration-300">My Trips</Button>
-              </a>
+<a href="/">
+  <Button variant="text" className="relative text-gray-700 hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%] rounded-full">
+    Home
+  </Button>
+</a>
+<a href="/create-trip">
+  <Button variant="text" className="relative text-gray-700 hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%] rounded-full">
+    Create Trip
+  </Button>
+</a>
+<a href="/my-trips">
+  <Button variant="text" className="relative text-gray-700 hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%] rounded-full">
+    My Trips
+  </Button>
+</a>
 
               {/* Profile Picture */}
               <Popover>
@@ -105,7 +111,7 @@ function Header() {
         <DialogContent>
           <DialogHeader>
             <DialogDescription>
-              <img src="/src/assets/WanderlustNBG.png" />
+              <img src="src/assets/WanderlustNBG.png" />
               <h2 className="font-bold text-lg mt-6">Sign In with Google</h2>
               <p>Sign In to the App with Google authentication securely</p>
               <Button onClick={login} className="w-full mt-5 flex gap-4 items-center">
@@ -116,6 +122,7 @@ function Header() {
           </DialogHeader>
         </DialogContent>
       </Dialog>
+      
     </div>
   );
 }

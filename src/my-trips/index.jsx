@@ -38,6 +38,9 @@ function MyTrips() {
         ))
         }
       </div>
+      <p className="mt-4 text-xl sm:text-l text-gray-500 max-w-2xl mx-auto font-bold text-center">
+  Copyrights 2025 - AI Travel Planner - NCST
+</p>
     </div>
   )
 }

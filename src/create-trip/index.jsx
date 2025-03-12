@@ -65,8 +65,7 @@ function CreateTrip() {
       return;
     }
 
-
-    toast("Form generated.");
+    toast("Form generating");
     setLoading(true);
     const FINAL_PROMPT = AI_PROMPT
       .replace('{location}', formData?.location)
@@ -145,7 +144,7 @@ function CreateTrip() {
         <div>
           <label className="text-xl my-3 font-medium">What is Your Budget?</label>
           <p>The budget is exclusively allocated for activities and dining purposes.</p>
-          <div className="grid grid-cols-1 gap-5 mt-5 mb-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-5 mb-5">
             {SelectBudgetOptions.map((item, index) => (
               <div
                 key={index}
@@ -167,16 +166,16 @@ function CreateTrip() {
           </div>
 
           <label className="text-xl font-medium my-3"> Who do you plan on traveling with on your next adventure?</label>
-          <div className="grid grid-cols-1 gap-5 mt-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-5">
             {SelectTravelList.map((item, index) => (
               <div
                 key={index}
                 onClick={() => handleInputChange('traveler', item.people)}
-                className={`cursor-pointer p-4 border rounded-lg hover:shadow-lg
+                className={`cursor-pointer p-2 border rounded-lg hover:shadow-lg
                 ${formData?.traveler === item.people && 'shadow-lg border-cyan-500'}`}
               >
-                <h2 className="text-3xl">{item.icon}</h2>
-                <h2 className="text-2xl font-bold">{item.title}</h2>
+                <h2 className="text-xl">{item.icon}</h2>
+                <h2 className="text-lg font-bold">{item.title}</h2>
                 <h2 className="text-sm text-gray-500">{item.desc}</h2>
               </div>
             ))}
@@ -207,6 +206,10 @@ function CreateTrip() {
           </DialogHeader>
         </DialogContent>
       </Dialog>
+      <p className="mt-4 text-xl sm:text-l text-gray-500 max-w-2xl mx-auto font-bold text-center">
+  Copyrights 2025 - AI Travel Planner - NCST
+</p>
+
     </div>
   );
 }
